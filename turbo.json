@@ -1,19 +1,35 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "MONGODB_URI",
+    "JWT_SECRET_KEY",
+    "JWT_EXPIRY",
+    "PORT",
+    "FRONTENDURI"
+  ],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": [
+        "^lint"
+      ]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
     "type-check": {
-      "dependsOn": ["^type-check"]
+      "dependsOn": [
+        "^type-check"
+      ]
     }
   }
 }
