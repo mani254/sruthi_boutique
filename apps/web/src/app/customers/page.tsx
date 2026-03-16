@@ -265,7 +265,7 @@ function CustomerOrdersList({ customerId }: { customerId: string }) {
           data?.orders.map((order) => (
             <TableRow key={order._id}>
               <TableCell className="font-medium">#{order.invoice}</TableCell>
-              <TableCell>{new Date(order.createdAt).toLocaleDateString()}</TableCell>
+              <TableCell>{order.createdAt ? new Date(order.createdAt).toLocaleDateString() : "N/A"}</TableCell>
               <TableCell>
                 <Badge variant="secondary" className="capitalize">{order.status}</Badge>
               </TableCell>

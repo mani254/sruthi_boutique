@@ -312,7 +312,7 @@ export default function AdminsPage() {
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[400px] p-0 z-100 pointer-events-auto" portal={false} onOpenAutoFocus={(e: React.FocusEvent) => e.preventDefault()}>
+                  <PopoverContent className="w-[400px] p-0 z-100 pointer-events-auto" portal={false} onOpenAutoFocus={(e) => e.preventDefault()}>
                     <Command shouldFilter={false}>
                       <CommandInput 
                         placeholder="Search store..." 
@@ -415,7 +415,7 @@ export default function AdminsPage() {
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[400px] p-0 z-100 pointer-events-auto" portal={false} onOpenAutoFocus={(e: React.FocusEvent) => e.preventDefault()}>
+                  <PopoverContent className="w-[400px] p-0 z-100 pointer-events-auto" portal={false} onOpenAutoFocus={(e) => e.preventDefault()}>
                     <Command shouldFilter={false}>
                       <CommandInput 
                         placeholder="Search store..." 
